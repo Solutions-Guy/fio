@@ -1,0 +1,16 @@
+[global]
+name=seq_pre
+ioengine=libaio
+direct=1
+group_reporting
+readwrite=write
+iodepth=128
+buffered=0
+loops=2
+randrepeat=0
+norandommap
+bs=128k
+
+
+[job1]
+filename=/dev/nvme0n1
