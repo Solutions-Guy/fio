@@ -1,0 +1,16 @@
+[global]
+name=rand_pre
+ioengine=libaio
+direct=1
+group_reporting
+readwrite=randwrite
+iodepth=64
+numjobs=8
+buffered=0
+loops=2
+randrepeat=0
+norandommap
+bs=4k
+
+[job1]
+filename=/dev/nvme0n1
